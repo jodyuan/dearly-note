@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300;1,9..144,400&family=Outfit:wght@300;400;500&display=swap");
+
+@theme {
+  --color-vanilla:   #FFFAF6;
+  --color-rose-dust: #D4A5A5;
+  --color-cocoa:     #3D2B1F;
+  --color-plaster:   #E8E0D4;
+
+  --font-serif:  "Fraunces", Georgia, serif;
+  --font-script: "Pinyon Script", cursive;
+  --font-sans:   "Outfit", system-ui, sans-serif;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    @apply antialiased;
+    font-family: var(--font-sans);
+    /* Prevent pull-to-refresh flash */
+    overscroll-behavior: none;
+    /* Subtle cursor for the ambient mood */
+    cursor: default;
+  }
+
+  /* Smooth selection color matching the warm palette */
+  ::selection {
+    background: rgba(212, 165, 165, 0.35);
+    color: #3D2B1F;
+  }
+}
+
+@layer utilities {
+  /* Glass morphism helper */
+  .glass {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  /* Paper-like surface */
+  .paper {
+    background: #FFFCF7;
+    border: 1px solid rgba(180, 150, 110, 0.2);
+    box-shadow:
+      0 2px 4px rgba(0,0,0,0.06),
+      0 8px 24px rgba(0,0,0,0.10),
+      inset 0 1px 0 rgba(255,255,255,0.9);
+  }
+}
