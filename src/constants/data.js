@@ -1,6 +1,6 @@
 export const DEARLY_DATA = {
   daily: [
-    "You don't have to earn your rest. Some days, simply existing softly is the most courageous thing you can do.",
+    "You don't have to earn your rest. Some days, simply existing is the most courageous thing you can do.",
     "The version of you from a year ago would be so proud of how far you've come, even quietly.",
     "You are allowed to want things: gentle things, big things, complicated things. All of it counts.",
     "Not every day needs to be productive. Some days are just for being alive, and that's enough.",
@@ -12,7 +12,7 @@ export const DEARLY_DATA = {
   ],
   birthday: [
     "Another year of being entirely, wonderfully yourself. That's worth celebrating slowly.",
-    "May this year hold something that surprises you in the best way — the kind you didn't think to wish for.",
+    "May this year hold something that surprises you in the best way, the kind you didn't think to wish for.",
     "You've made it through every hard day so far. Here's to the soft ones waiting ahead.",
     "There is no rush to figure out the next decade today. Just be here, in this specific year, for a while.",
     "You are allowed to take up space. This year, try to stop apologizing for it.",

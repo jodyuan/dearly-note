@@ -19,7 +19,7 @@ import WelcomeModal from './components/WelcomeModal'
  */
 export default function App() {
   const { category, note, selectCategory, drawAnother } = useNote()
-  const { muted, toggleMute, started } = useAudio('/audio/bg-music.mp3', { volume: 0.4 })
+  const { muted, toggleMute, started } = useAudio(`${import.meta.env.BASE_URL}audio/bg-music.mp3`, { volume: 0.4 })
   const [showModal, setShowModal] = useState(true)
 
   const handleEnter = () => {
